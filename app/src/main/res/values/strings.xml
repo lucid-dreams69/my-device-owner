@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Device Owner</string>
+
+    <string name="status_owner">✅ Device owner: active</string>
+    <string name="status_owner_detail">This app manages the phone. The policies below take effect immediately and can be switched off again.</string>
+    <string name="status_not_owner">⚪ Not device owner</string>
+    <string name="status_not_owner_detail">To enroll: factory reset, tap the first welcome screen 6 times and scan the QR code.\n\nFor testing without a reset (all accounts removed first):\nadb shell dpm set-device-owner %1$s</string>
+
+    <string name="section_device">Device</string>
+    <!-- Quoted so the alignment spaces survive. -->
+    <string name="info_format">"Model:          %1$s\nAndroid:        %2$s (API %3$d)\nSecurity patch: %4$s\nApp version:    %5$s\nAdmin:          %6$s"</string>
+
+    <string name="section_log">Enrollment log</string>
+    <string name="log_empty">No enrollment events recorded yet.</string>
+
+    <string name="section_policies">Try a policy</string>
+    <string name="policy_camera">Disable camera</string>
+    <string name="policy_screenshots">Block screenshots</string>
+    <string name="lock_info_hint">Lock screen message, e.g. \"If found, call …\"</string>
+    <string name="lock_info_save">Save lock screen message</string>
+    <string name="lock_info_saved">Lock screen message saved</string>
+    <string name="lock_now">Lock screen now</string>
+
+    <string name="section_remove">Leave device-owner mode</string>
+    <string name="remove_owner_explain">Clears the policies above and turns this into a normal app that you can uninstall. No factory reset needed.</string>
+    <string name="remove_owner">Remove device owner</string>
+    <string name="remove_owner_title">Remove device owner?</string>
+    <string name="remove_owner_message">The phone stops being managed. To make this app device owner again you need another factory reset and QR enrollment (or the adb command).</string>
+    <string name="remove_owner_confirm">Remove</string>
+    <string name="remove_owner_done">Device owner removed. You can uninstall the app normally now.</string>
+</resources>

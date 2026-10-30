@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textIsSelectable="true" />
+
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/section_device" />
+
+        <TextView
+            android:id="@+id/info"
+            style="@style/Mono" />
+
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/section_log" />
+
+        <TextView
+            android:id="@+id/log"
+            style="@style/Mono" />
+
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/section_policies" />
+
+        <Switch
+            android:id="@+id/camera_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/policy_camera" />
+
+        <Switch
+            android:id="@+id/screenshot_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/policy_screenshots" />
+
+        <EditText
+            android:id="@+id/lock_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/lock_info_hint"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences" />
+
+        <Button
+            android:id="@+id/save_lock_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lock_info_save" />
+
+        <Button
+            android:id="@+id/lock_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lock_now" />
+
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/section_remove" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_owner_explain" />
+
+        <Button
+            android:id="@+id/remove_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remove_owner" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+.gradle/
+.idea/
+build/
+local.properties
+*.iml
+
+# Signing secrets: never commit these. Losing release.jks means you can't
+# publish updates that the enrolled phone will accept.
+keystore.properties
+*.jks
+*.keystore
+
+# Build output (the APK is uploaded as a GitHub release asset instead)
+dist/
